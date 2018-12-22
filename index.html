@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Experiment m3u builder with javascript (chrome only)</title>
+    <style type="text/css">::-webkit-scrollbar {width: 10px;height: 0px;}::-webkit-scrollbar-thumb {background-color: rgba(100,170,200, 1);border-radius: 0 1px 1px 0;}::-webkit-scrollbar-track {background: rgba(117,191,248, 0.5);}</style>
+    <script src="js/m3ubuilderjs.js"></script>
+  </head>
+  <body bgcolor="#222266" style="color:white">
+    <center>
+      <span> Experiment javascript m3u Builder </span><br>
+      <span> test only for mp3 files and chrome browser </span><br>
+      <p></p>
+      <div id="alert" style="color:red"></div>
+      <button onclick="document.getElementById('file').click()"><input type="file" id="file" style="display:none" onchange="generateFileList()" value="" multiple accept=".mp3">Choose Files</button>
+      <br><br>
+      <select id="Select" style="width:100%;" size="20" multiple></select>
+      <br><br>
+      <input type="button" id="save" value="Save"><span>  </span><input type="button" id="refreshing" value="Clear and Refresh" onclick="refresh()">
+      
+    </center>
+  </body>
+</html>
